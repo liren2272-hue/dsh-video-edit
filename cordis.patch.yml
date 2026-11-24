@@ -1,0 +1,9 @@
+# 把 dsh-video-edit 插进 DSH profile 的配置树（宿主侧 Cordis 插件，注册 tools）。
+- insert:
+    - id: dsh-video-edit
+      name: '@local/dsh-video-edit'
+      config:
+        ffmpegBin: 'C:/FFmpeg/bin'
+        ffprobeBin: 'C:/FFmpeg/bin'
+        scenedetect: 'C:/Program Files/Python311/Scripts/scenedetect.exe'
+        maxDurationSec: 600

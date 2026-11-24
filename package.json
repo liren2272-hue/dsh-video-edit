@@ -1,0 +1,37 @@
+{
+  "name": "@local/dsh-video-edit",
+  "version": "0.1.4",
+  "private": true,
+  "type": "module",
+  "description": "DSH 视频剪辑插件：把本机 FFmpeg / ffprobe / PySceneDetect 封装成可直接调用的 Agent 工具——探测流信息、场景切点检测、剪切/拼接/转码、自动去静音剪辑。本地 CLI 调用，零 API 成本。",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "video",
+    "ffmpeg",
+    "scenedetect",
+    "auto-edit",
+    "剪辑"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "exports": {
+    ".": "./index.js",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "icon.svg",
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "local",
+  "license": "MIT"
+}
